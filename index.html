@@ -1,19 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
+    <!-- daisyUI and tailwindcss -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome icon link  -->
+    <script src="https://kit.fontawesome.com/c3b317684b.js" crossorigin="anonymous"></script>
+    <!-- tailwindcss custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- manrope google font  -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+        .manrope-regular {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .manrope-medium {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .manrope-semibold {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .manrope-bold {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .manrope-extrabold {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h1 class="text-7xl manrope-extrabold">
+                        It's good <br />
+                        tea time at The <br />
+                        Tea House
+                    </h1>
+                    <p class="py-6 manrope-medium text-[#777]">
+                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+                <div>
+                    <img src="images/banner.png" class="max-w-sm" />
+                    <!-- rating batch -->
+                    <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
+                        <span><i class="fa-solid fa-star text-3xl text-amber-400"></i></span>
+                        <div>
+                            <h3 class="manrope-extrabold text-3xl">5.00</h3>
+                            <p class="manrope-semibold text-[#777]">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
-
-    </main>
-    <footer>
-        
-    </footer>
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
